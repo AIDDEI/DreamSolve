@@ -1,0 +1,196 @@
+/*Custom Font*/
+@font-face {
+    font-family: customFont;
+    src: url("font/font.ttf");
+}
+
+/*Standaardopmaak*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'customFont', sans-serif;
+    color: #ffffff;
+    background-image: url("img/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.37);
+}
+
+header {
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-bottom: 25px;
+}
+
+header div {
+    background-color: rgba(59, 11, 116, 0.72);
+}
+
+header div img {
+    width: 50%;
+}
+
+h1 {
+    -webkit-text-stroke: 1px #000000;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h2 {
+    -webkit-text-stroke: 1px #000000;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.37);
+}
+
+hr {
+    margin-top: 100px;
+    border: 5px solid #9b10a2;
+    background-color: #9b10a2;
+}
+
+
+/*Navbar*/
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 10;
+    width: 97.8vw;
+}
+
+nav a {
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    padding: 10px 0 10px 0;
+}
+
+nav div {
+    flex-grow: 1;
+    text-align: center;
+    background-color: #9b10a2;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+nav div:hover, nav div.selected {
+    background-color: #3b0b74;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+}
+
+
+/*Sections*/
+section h1 {
+    margin-top: 100px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+section.title {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+section.text {
+    background-image: linear-gradient(to bottom right, #9b10a2, #a11ea8, #c234c9, #d54cdc, #f99dd2);
+    padding: 10px;
+    border-radius: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: auto;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #3b0b74;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9b10a2;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #7517e8;
+}
+
+
+/*Selection*/
+::selection {
+    background-color: #ffffff;
+    color: #9b10a2;
+}
+
+
+/*Footer*/
+footer {
+    background-image: linear-gradient(to bottom right, #9b10a2, #a11ea8, #c234c9, #d54cdc, #f99dd2);
+    border: 10px solid #3b0b74;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials div {
+    padding: 20px;
+}
+
+#copyright {
+    font-size: 12px;
+}
+
+
+/*Mobile View*/
+@media screen and (max-width: 650px){
+    nav {
+        display: block;
+        width: 97vw;
+    }
+
+    .socials {
+        display: block;
+    }
+
+    section h1 {
+        margin-top: 200px;
+    }
+}
