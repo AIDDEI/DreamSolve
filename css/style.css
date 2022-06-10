@@ -68,6 +68,19 @@ hr {
 }
 
 
+/*Images*/
+.imageGallery {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.imageGallery img {
+    width: 48%;
+    height: auto;
+}
+
+
 /*Navbar*/
 nav {
     display: flex;
